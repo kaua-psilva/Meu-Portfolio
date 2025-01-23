@@ -1,7 +1,6 @@
 @import "../src/_var";
-
-html{
-  scroll-behavior: smooth;
+::-webkit-scrollbar{
+  display: none;
 }
 
 * {
@@ -65,8 +64,7 @@ header {
 nav {
   display: flex;
   gap: 20px;
-  a {
-    color: black;
+  a {color: black;
     &:hover {
       color: white;
     }
