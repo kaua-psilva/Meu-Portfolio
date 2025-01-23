@@ -2,14 +2,26 @@ import './App.scss'
 import './_var.scss'
 import HeroContent from './components/heroContent'
 import MeuHeader from './components/header'
-import SocialMidias from './components/socialMidias'
+import React, { useEffect } from 'react'
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+import MinhasSkills from './components/mySkills'
+import AboutMe from './components/aboutMe'
 function App() {
+  useEffect(() => {
+    Aos.init({
+      easing: 'ease-in-out',
+      once: false,
+      mirror: true,
+    })
+  })
+
   return (
     <>
-      <div id='headerSite'>
-        <MeuHeader />
-        <HeroContent/>
-      </div>
+      <MeuHeader />
+      <HeroContent />
+      <MinhasSkills />
+      <AboutMe />
     </>
   )
 }
