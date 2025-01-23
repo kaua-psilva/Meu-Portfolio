@@ -7,6 +7,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 import MinhasSkills from './components/mySkills'
 import AboutMe from './components/aboutMe'
+import MeuProjetos from './components/MyProjects'
 function App() {
   useEffect(() => {
     Aos.init({
@@ -22,6 +23,7 @@ function App() {
       <HeroContent />
       <MinhasSkills />
       <AboutMe />
+      <MeuProjetos/>
     </>
   )
 }

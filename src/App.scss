@@ -173,7 +173,21 @@ nav {
     }
   }
   #aboutMeText{
-    width: 60%;
+    width: 50%;
     margin-top: -90px;
+  }
+}
+#projectContent{
+  background-color: black;
+  color: white;
+  .containerProject{
+    display: flex;
+    div{
+      display: flex;
+      flex-direction: column;
+      img{
+        width: 450px;
+      }
+    }
   }
 }
